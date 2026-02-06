@@ -3,154 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mbridge.ai</title>
-    <meta name="description" content="mbridge.ai — Reserved domain. For strategic inquiries only.">
+    <title>mbridge.ai — Premium AI Domain for Sale</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
-            line-height: 1.6; 
-            color: #ffffff; 
-            background: linear-gradient(135deg, #050508 0%, #0a0a12 100%);
-            min-height: 100vh; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            justify-content: center; 
-            padding: 20px; 
-            text-align: center; 
-            position: relative; 
-            overflow-x: hidden; 
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Exo+2:wght@900&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0a0a1f;
+            color: #e0e0ff;
+            font-family: 'Exo 2', sans-serif;
+            overflow-x: hidden;
+            text-align: center;
         }
-        .light-effect { 
-            position: absolute; 
-            top: 50%; 
-            left: 50%; 
-            width: min(120vw, 1000px); 
-            height: min(120vh, 1000px); 
-            background: radial-gradient(circle at center, rgba(80, 180, 255, 0.06) 0%, transparent 65%);
-            transform: translate(-50%, -50%); 
-            pointer-events: none; 
-            z-index: -1; 
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
         }
-        .container { 
-            max-width: 760px; 
-            width: 100%; 
-            padding: 70px 40px; 
-            background: rgba(10, 12, 20, 0.8);
-            backdrop-filter: blur(16px); 
-            border-radius: 28px; 
-            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(80, 180, 255, 0.15); 
-            border: 1px solid rgba(80, 180, 255, 0.1); 
-            z-index: 1; 
+
+        .domain-title {
+            font-size: 9vw;
+            font-weight: 900;
+            letter-spacing: 0.15em;
+            margin: 0;
         }
-        h1 { 
-            font-size: clamp(3rem, 9vw, 5.5rem); 
-            font-weight: 200; 
-            letter-spacing: 0.25em; 
-            margin-bottom: 35px; 
-            opacity: 0.95; 
-            text-transform: lowercase; 
-            color: #c0e0ff;
+
+        .mbridge {
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(90deg, #00ffea, #00aaff, #7b00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: glowPulse 3s infinite alternate, floatText 6s infinite ease-in-out;
         }
-        .domain { display: inline-block; transition: opacity 0.3s ease; }
-        .domain:hover { opacity: 0.8; }
-        p { 
-            font-size: clamp(1.2rem, 4.5vw, 1.6rem); 
-            opacity: 0.85; 
-            max-width: 640px; 
-            margin: 0 auto 45px; 
-            line-height: 1.8; 
-            color: #b0d0e8;
+
+        .ai {
+            font-family: 'Exo 2', sans-serif;
+            color: #00ffff;
+            text-shadow: 0 0 30px #00ffff, 0 0 60px #00ffff;
+            animation: neonFlicker 2s infinite alternate, scalePulse 4s infinite ease-in-out;
         }
-        .note-section { 
-            background: rgba(20, 25, 40, 0.3); 
-            border-radius: 18px; 
-            padding: 28px; 
-            margin: 45px 0; 
-            border: 1px solid rgba(80, 180, 255, 0.15); 
+
+        @keyframes glowPulse {
+            0% { text-shadow: 0 0 20px #00ffea; }
+            100% { text-shadow: 0 0 60px #00ffea, 0 0 100px #00aaff; }
         }
-        .note-text { 
-            font-size: 0.98rem; 
-            opacity: 0.75; 
-            line-height: 1.8; 
-            color: #90b8d8;
+
+        @keyframes floatText {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
         }
-        .contact-section { margin-top: 45px; }
-        .email-link { 
-            font-size: 1.5rem; 
-            color: #70c0ff; 
-            text-decoration: none; 
-            font-family: 'Courier New', monospace; 
-            padding: 12px 26px; 
-            background: rgba(80, 180, 255, 0.12); 
-            border-radius: 12px; 
-            display: inline-block; 
-            border: 1px solid rgba(80, 180, 255, 0.3); 
-            transition: all 0.3s ease; 
+
+        @keyframes neonFlicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.9; }
+            75% { opacity: 0.95; }
         }
-        .email-link:hover { 
-            background: rgba(80, 180, 255, 0.22); 
-            transform: translateY(-3px); 
-            box-shadow: 0 8px 20px rgba(80, 180, 255, 0.12); 
+
+        @keyframes scalePulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
         }
-        .contact-note { 
-            font-size: 0.95rem; 
-            opacity: 0.65; 
-            margin-top: 18px; 
-            font-style: italic; 
-            color: #80a8c8;
+
+        canvas#particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
         }
-        .footer { 
-            position: absolute; 
-            bottom: 30px; 
-            font-size: 0.85rem; 
-            opacity: 0.4; 
-            width: 100%; 
-            text-align: center; 
-            color: #6088a8;
+
+        .tagline {
+            font-size: 2.5vw;
+            margin-top: 30px;
+            opacity: 0.9;
+            animation: fadeIn 3s ease-in;
         }
-        @media (max-width: 768px) { 
-            .container { padding: 50px 30px; margin: 20px; } 
-            .email-link { font-size: 1.3rem; } 
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 0.9; transform: translateY(0); }
+        }
+
+        section {
+            padding: 100px 10%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+            margin-bottom: 60px;
+            background: linear-gradient(90deg, #00aaff, #00ffea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .areas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            text-align: left;
+        }
+
+        .area-card {
+            background: rgba(20, 20, 50, 0.5);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #00ffff33;
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        .area-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2);
+        }
+
+        .area-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #00ffff;
+        }
+
+        .price-section {
+            background: linear-gradient(135deg, #1a1a3a, #0f0f2f);
+            padding: 120px 10%;
+        }
+
+        .price {
+            font-size: 5rem;
+            font-weight: 900;
+            color: #00ffea;
+            margin: 40px 0;
+        }
+
+        .installment {
+            font-size: 1.8rem;
+            margin-bottom: 60px;
+            opacity: 0.9;
+        }
+
+        .buy-btn {
+            background: linear-gradient(45deg, #00ffea, #00aaff);
+            color: #000;
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 20px 60px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(0, 255, 234, 0.4);
+        }
+
+        .buy-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 20px 50px rgba(0, 255, 234, 0.6);
+        }
+
+        footer {
+            padding: 60px;
+            background: #050510;
+            font-size: 1.2rem;
+        }
+
+        .email {
+            color: #00ffff;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .copied {
+            display: none;
+            color: #00ffea;
+            margin-left: 10px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div class="light-effect"></div>
-    <div class="container">
-        <h1><span class="domain">mbridge.ai</span></h1>
-        <p>This domain is reserved.<br>Future project consideration.</p>
-        
-        <!-- 低调中性免责声明 -->
-        <div class="note-section">
-            <div class="note-text">
-                This domain is reserved for future development and is not associated with any third party.
+
+    <header>
+        <canvas id="particles"></canvas>
+        <h1 class="domain-title">
+            <span class="mbridge">mbridge</span><span class="ai">.ai</span>
+        </h1>
+        <p class="tagline">The Ultimate Bridge Between Minds and Machines</p>
+    </header>
+
+    <section>
+        <h2>Perfect for Cutting-Edge AI Applications</h2>
+        <div class="areas">
+            <div class="area-card">
+                <h3>AI-Powered Structural Engineering</h3>
+                <p>Revolutionary platform for designing next-generation smart bridges using generative AI and simulation.</p>
+            </div>
+            <div class="area-card">
+                <h3>AI Bridge Game Masters</h3>
+                <p>Advanced AI opponents and coaching systems for contract bridge players worldwide.</p>
+            </div>
+            <div class="area-card">
+                <h3>AI Fitness & Movement Analysis</h3>
+                <p>Real-time form correction and personalized training programs focused on bridge poses and core strength.</p>
+            </div>
+            <div class="area-card">
+                <h3>AI-Guided Bridge Tourism</h3>
+                <p>Immersive AR/VR tours of iconic global bridges with AI narration and personalized itineraries.</p>
+            </div>
+            <div class="area-card">
+                <h3>AI Bridge Photography & Art</h3>
+                <p>Generative AI tools for creating stunning bridge-themed digital art and photography enhancements.</p>
+            </div>
+            <div class="area-card">
+                <h3>AI Heritage Bridge Preservation</h3>
+                <p>Digital twin modeling and predictive maintenance for historical bridges using machine learning.</p>
+            </div>
+            <div class="area-card">
+                <h3>AI Ecological Crossing Design</h3>
+                <p>Optimizing wildlife bridges and green infrastructure with environmental AI simulations.</p>
+            </div>
+            <div class="area-card">
+                <h3>AI Cultural Integration Platforms</h3>
+                <p>Bridging language and cultural gaps with advanced NLP and personalized migration support.</p>
+            </div>
+            <div class="area-card">
+                <h3>AI Metaverse Bridge Builder</h3>
+                <p>Create and explore infinite virtual bridges in VR/AR worlds powered by generative AI.</p>
             </div>
         </div>
-        
-        <!-- 联系方式 -->
-        <div class="contact-section">
-            <a href="#" class="email-link" aria-label="Send email">
-                <span id="email-display">joshua369x@gmail.com</span>
-            </a>
-            <div class="contact-note">
-                For strategic inquiries only.
-            </div>
-        </div>
-    </div>
+    </section>
 
-    <div class="footer">
-        © <span id="currentYear"></span> mbridge.ai — All rights reserved.
-    </div>
+    <section class="price-section">
+        <h2>Own mbridge.ai Today</h2>
+        <div class="price">$42,000 USD</div>
+        <p class="installment">Flexible 12-month payment plan available</p>
+        <button class="buy-btn" onclick="window.open('https://www.spaceship.com/s/buy/mbridge.ai/9i28bKb0DpzB3vNY', '_blank')">Buy Now</button>
+    </section>
 
+    <footer>
+        <p>Contact: <span class="email" id="email">joshua369x@gmail.com</span> <span class="copied" id="copied">Copied!</span></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-        const email = 'joshua369x' + '@' + 'gmail.com';
-        const subject = '?subject=Inquiry: mbridge.ai';
-        const mailto = 'mailto:' + email + subject;
-        document.querySelector('.email-link').href = mailto;
-        document.getElementById('email-display').textContent = email;
+        particlesJS("particles", {
+            "particles": {
+                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": ["#00ffff", "#00aaff", "#7b00ff"] },
+                "shape": { "type": "char", "character": { "value": "01", "font": "Verdana", "style": "", "weight": "normal" } },
+                "opacity": { "value": 0.6, "random": true },
+                "size": { "value": 4, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#00ffff", "opacity": 0.3, "width": 1 },
+                "move": { "enable": true, "speed": 3, "direction": "none", "random": false, "straight": false, "out_mode": "out" }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": { "onhover": { "enable": true, "mode": "grab" }, "resize": true },
+                "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 0.8 } } }
+            },
+            "retina_detect": true
+        });
+
+        document.getElementById('email').addEventListener('click', function() {
+            navigator.clipboard.writeText('joshua369x@gmail.com');
+            document.getElementById('copied').style.display = 'inline';
+            setTimeout(() => { document.getElementById('copied').style.display = 'none'; }, 2000);
+        });
     </script>
 </body>
 </html>
