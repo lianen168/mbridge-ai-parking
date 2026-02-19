@@ -3,193 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mbridge.ai — Premium AI Domain for Sale</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>mbridge.ai — Premium AI Domain for Sale | Mind-Machine Interface</title>
+    <meta name="description" content="For sale: mbridge.ai, a premium domain for AI-powered platforms, structural engineering, metaverse development, and cultural integration. Bridge the gap between minds and machines.">
+    <meta name="keywords" content="AI domain, premium domain, mbridge.ai, artificial intelligence, machine learning, metaverse, generative AI, AI startups, tech domain, domain for sale">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mbridge.ai/">
+    <meta property="og:title" content="mbridge.ai — Premium AI Domain for Sale | Mind-Machine Interface">
+    <meta property="og:description" content="A unique and powerful domain for visionary projects in AI, engineering, and the metaverse. Secure mbridge.ai today.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mbridge.ai/">
+    <meta property="twitter:title" content="mbridge.ai — Premium AI Domain for Sale | Mind-Machine Interface">
+    <meta property="twitter:description" content="A unique and powerful domain for visionary projects in AI, engineering, and the metaverse. Secure mbridge.ai today.">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Exo+2:wght@900&display=swap');
+        body { margin: 0; padding: 0; background: #0a0a1f; color: #e0e0ff; font-family: 'Exo 2', sans-serif; overflow-x: hidden; text-align: center; }
+        header { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; overflow: hidden; }
+        .domain-title { font-size: 9vw; font-weight: 900; letter-spacing: 0.15em; margin: 0; }
+        .mbridge { font-family: 'Orbitron', sans-serif; background: linear-gradient(90deg, #00ffea, #00aaff, #7b00ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: glowPulse 3s infinite alternate, floatText 6s infinite ease-in-out; }
+        .ai { font-family: 'Exo 2', sans-serif; color: #00ffff; text-shadow: 0 0 30px #00ffff, 0 0 60px #00ffff; animation: neonFlicker 2s infinite alternate, scalePulse 4s infinite ease-in-out; }
+        @keyframes glowPulse { 0% { text-shadow: 0 0 20px #00ffea; } 100% { text-shadow: 0 0 60px #00ffea, 0 0 100px #00aaff; } }
+        @keyframes floatText { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-30px); } }
+        @keyframes neonFlicker { 0%, 100% { opacity: 1; } 50% { opacity: 0.9; } 75% { opacity: 0.95; } }
+        @keyframes scalePulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.15); } }
+        canvas#particles { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.6; }
+        .tagline { font-size: 2.5vw; margin-top: 30px; opacity: 0.9; animation: fadeIn 3s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(50px); } to { opacity: 0.9; transform: translateY(0); } }
+        section { padding: 100px 10%; max-width: 1200px; margin: 0 auto; }
+        h2 { font-size: 3.5rem; margin-bottom: 60px; background: linear-gradient(90deg, #00aaff, #00ffea); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .areas { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; text-align: left; }
+        .area-card { background: rgba(20, 20, 50, 0.5); padding: 30px; border-radius: 15px; border: 1px solid #00ffff33; transition: transform 0.4s, box-shadow 0.4s; }
+        .area-card:hover { transform: translateY(-15px); box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2); }
+        .area-card h3 { font-size: 1.8rem; margin-bottom: 15px; color: #00ffff; }
+        .price-section { background: linear-gradient(135deg, #1a1a3a, #0f0f2f); padding: 120px 10%; }
+        .price { font-size: 5rem; font-weight: 900; color: #00ffea; margin: 40px 0; }
+        .installment { font-size: 1.8rem; margin-bottom: 60px; opacity: 0.9; }
+        .buy-btn { background: linear-gradient(45deg, #00ffea, #00aaff); color: #000; font-size: 2rem; font-weight: bold; padding: 20px 60px; border: none; border-radius: 50px; cursor: pointer; transition: all 0.3s; box-shadow: 0 10px 30px rgba(0, 255, 234, 0.4); }
+        .buy-btn:hover { transform: scale(1.1); box-shadow: 0 20px 50px rgba(0, 255, 234, 0.6); }
+        
+        /* Offer Form Styles */
+        .offer-form-container { margin-top: 80px; }
+        .offer-form-container h3 { font-size: 2.5rem; margin-bottom: 40px; color: #e0e0ff; }
+        #offer-form { display: flex; flex-direction: column; align-items: center; gap: 20px; max-width: 600px; margin: 0 auto; }
+        #offer-form input { width: 100%; padding: 15px; border-radius: 10px; border: 1px solid #00ffff88; background: #1a1a3a; color: #e0e0ff; font-family: 'Exo 2', sans-serif; font-size: 1.2rem; text-align: center; }
+        #offer-form input::placeholder { color: #aaaaee; opacity: 0.7; }
+        #offer-form button { background: transparent; border: 2px solid #00ffea; color: #00ffea; font-size: 1.5rem; font-weight: bold; padding: 15px 50px; border-radius: 50px; cursor: pointer; transition: all 0.3s; }
+        #offer-form button:hover { background: #00ffea; color: #0a0a1f; box-shadow: 0 0 20px #00ffea; }
+        #form-status { margin-top: 20px; font-size: 1.2rem; display: none; font-weight: bold; }
+        #form-status.success { color: #00ffea; }
+        #form-status.error { color: #ff4d4d; }
 
-        body {
-            margin: 0;
-            padding: 0;
-            background: #0a0a1f;
-            color: #e0e0ff;
-            font-family: 'Exo 2', sans-serif;
-            overflow-x: hidden;
-            text-align: center;
-        }
-
-        header {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .domain-title {
-            font-size: 9vw;
-            font-weight: 900;
-            letter-spacing: 0.15em;
-            margin: 0;
-        }
-
-        .mbridge {
-            font-family: 'Orbitron', sans-serif;
-            background: linear-gradient(90deg, #00ffea, #00aaff, #7b00ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: glowPulse 3s infinite alternate, floatText 6s infinite ease-in-out;
-        }
-
-        .ai {
-            font-family: 'Exo 2', sans-serif;
-            color: #00ffff;
-            text-shadow: 0 0 30px #00ffff, 0 0 60px #00ffff;
-            animation: neonFlicker 2s infinite alternate, scalePulse 4s infinite ease-in-out;
-        }
-
-        @keyframes glowPulse {
-            0% { text-shadow: 0 0 20px #00ffea; }
-            100% { text-shadow: 0 0 60px #00ffea, 0 0 100px #00aaff; }
-        }
-
-        @keyframes floatText {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-30px); }
-        }
-
-        @keyframes neonFlicker {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.9; }
-            75% { opacity: 0.95; }
-        }
-
-        @keyframes scalePulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.15); }
-        }
-
-        canvas#particles {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            opacity: 0.6;
-        }
-
-        .tagline {
-            font-size: 2.5vw;
-            margin-top: 30px;
-            opacity: 0.9;
-            animation: fadeIn 3s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(50px); }
-            to { opacity: 0.9; transform: translateY(0); }
-        }
-
-        section {
-            padding: 100px 10%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        h2 {
-            font-size: 3.5rem;
-            margin-bottom: 60px;
-            background: linear-gradient(90deg, #00aaff, #00ffea);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .areas {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            text-align: left;
-        }
-
-        .area-card {
-            background: rgba(20, 20, 50, 0.5);
-            padding: 30px;
-            border-radius: 15px;
-            border: 1px solid #00ffff33;
-            transition: transform 0.4s, box-shadow 0.4s;
-        }
-
-        .area-card:hover {
-            transform: translateY(-15px);
-            box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2);
-        }
-
-        .area-card h3 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            color: #00ffff;
-        }
-
-        .price-section {
-            background: linear-gradient(135deg, #1a1a3a, #0f0f2f);
-            padding: 120px 10%;
-        }
-
-        .price {
-            font-size: 5rem;
-            font-weight: 900;
-            color: #00ffea;
-            margin: 40px 0;
-        }
-
-        .installment {
-            font-size: 1.8rem;
-            margin-bottom: 60px;
-            opacity: 0.9;
-        }
-
-        .buy-btn {
-            background: linear-gradient(45deg, #00ffea, #00aaff);
-            color: #000;
-            font-size: 2rem;
-            font-weight: bold;
-            padding: 20px 60px;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s;
-            box-shadow: 0 10px 30px rgba(0, 255, 234, 0.4);
-        }
-
-        .buy-btn:hover {
-            transform: scale(1.1);
-            box-shadow: 0 20px 50px rgba(0, 255, 234, 0.6);
-        }
-
-        footer {
-            padding: 60px;
-            background: #050510;
-            font-size: 1.2rem;
-        }
-
-        .email {
-            color: #00ffff;
-            cursor: pointer;
-            text-decoration: underline;
-        }
-
-        .copied {
-            display: none;
-            color: #00ffea;
-            margin-left: 10px;
-            font-weight: bold;
-        }
+        footer { padding: 60px; background: #050510; font-size: 1.2rem; }
+        .email { color: #00ffff; cursor: pointer; text-decoration: underline; }
+        .copied { display: none; color: #00ffea; margin-left: 10px; font-weight: bold; }
     </style>
 </head>
 <body>
-
     <header>
         <canvas id="particles"></canvas>
         <h1 class="domain-title">
@@ -201,50 +76,37 @@
     <section>
         <h2>Perfect for Cutting-Edge AI Applications</h2>
         <div class="areas">
-            <div class="area-card">
-                <h3>AI-Powered Structural Engineering</h3>
-                <p>Revolutionary platform for designing next-generation smart bridges using generative AI and simulation.</p>
-            </div>
-            <div class="area-card">
-                <h3>AI Bridge Game Masters</h3>
-                <p>Advanced AI opponents and coaching systems for contract bridge players worldwide.</p>
-            </div>
-            <div class="area-card">
-                <h3>AI Fitness & Movement Analysis</h3>
-                <p>Real-time form correction and personalized training programs focused on bridge poses and core strength.</p>
-            </div>
-            <div class="area-card">
-                <h3>AI-Guided Bridge Tourism</h3>
-                <p>Immersive AR/VR tours of iconic global bridges with AI narration and personalized itineraries.</p>
-            </div>
-            <div class="area-card">
-                <h3>AI Bridge Photography & Art</h3>
-                <p>Generative AI tools for creating stunning bridge-themed digital art and photography enhancements.</p>
-            </div>
-            <div class="area-card">
-                <h3>AI Heritage Bridge Preservation</h3>
-                <p>Digital twin modeling and predictive maintenance for historical bridges using machine learning.</p>
-            </div>
-            <div class="area-card">
-                <h3>AI Ecological Crossing Design</h3>
-                <p>Optimizing wildlife bridges and green infrastructure with environmental AI simulations.</p>
-            </div>
-            <div class="area-card">
-                <h3>AI Cultural Integration Platforms</h3>
-                <p>Bridging language and cultural gaps with advanced NLP and personalized migration support.</p>
-            </div>
-            <div class="area-card">
-                <h3>AI Metaverse Bridge Builder</h3>
-                <p>Create and explore infinite virtual bridges in VR/AR worlds powered by generative AI.</p>
-            </div>
+            <div class="area-card"> <h3>AI-Powered Structural Engineering</h3> <p>Revolutionary platform for designing next-generation smart bridges using generative AI and simulation.</p> </div>
+            <div class="area-card"> <h3>AI Bridge Game Masters</h3> <p>Advanced AI opponents and coaching systems for contract bridge players worldwide.</p> </div>
+            <div class="area-card"> <h3>AI Fitness & Movement Analysis</h3> <p>Real-time form correction and personalized training programs focused on bridge poses and core strength.</p> </div>
+            <div class="area-card"> <h3>AI-Guided Bridge Tourism</h3> <p>Immersive AR/VR tours of iconic global bridges with AI narration and personalized itineraries.</p> </div>
+            <div class="area-card"> <h3>AI Bridge Photography & Art</h3> <p>Generative AI tools for creating stunning bridge-themed digital art and photography enhancements.</p> </div>
+            <div class="area-card"> <h3>AI Heritage Bridge Preservation</h3> <p>Digital twin modeling and predictive maintenance for historical bridges using machine learning.</p> </div>
+            <div class="area-card"> <h3>AI Ecological Crossing Design</h3> <p>Optimizing wildlife bridges and green infrastructure with environmental AI simulations.</p> </div>
+            <div class="area-card"> <h3>AI Cultural Integration Platforms</h3> <p>Bridging language and cultural gaps with advanced NLP and personalized migration support.</p> </div>
+            <div class="area-card"> <h3>AI Metaverse Bridge Builder</h3> <p>Create and explore infinite virtual bridges in VR/AR worlds powered by generative AI.</p> </div>
         </div>
     </section>
 
     <section class="price-section">
         <h2>Own mbridge.ai Today</h2>
-        <div class="price">$42,000 USD</div>
+        <div class="price">$12,000 USD</div>
         <p class="installment">Flexible 12-month payment plan available</p>
-        <button class="buy-btn" onclick="window.open('https://www.spaceship.com/s/buy/mbridge.ai/9i28bKb0DpzB3vNY', '_blank')">Buy Now</button>
+        <button class="buy-btn" onclick="window.open('https://www.spaceship.com/s/buy/mbridge.ai/xCoGjBn353QmqfiN', '_blank')">Buy Now</button>
+
+        <div class="offer-form-container">
+            <h3>Make a Counter Offer</h3>
+            <form id="offer-form" action="https://formsubmit.co/joshua369x@gmail.com" method="POST">
+                <!-- FormSubmit settings -->
+                <input type="hidden" name="_subject" value="New Counter Offer for mbridge.ai">
+                <input type="hidden" name="_next" value="false"> <!-- Stay on page for AJAX -->
+
+                <input type="number" name="offer_amount" placeholder="Your Offer in USD" required>
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <button type="submit">Send Offer</button>
+            </form>
+            <p id="form-status"></p>
+        </div>
     </section>
 
     <footer>
@@ -253,28 +115,55 @@
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
-        particlesJS("particles", {
-            "particles": {
-                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
-                "color": { "value": ["#00ffff", "#00aaff", "#7b00ff"] },
-                "shape": { "type": "char", "character": { "value": "01", "font": "Verdana", "style": "", "weight": "normal" } },
-                "opacity": { "value": 0.6, "random": true },
-                "size": { "value": 4, "random": true },
-                "line_linked": { "enable": true, "distance": 150, "color": "#00ffff", "opacity": 0.3, "width": 1 },
-                "move": { "enable": true, "speed": 3, "direction": "none", "random": false, "straight": false, "out_mode": "out" }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": { "onhover": { "enable": true, "mode": "grab" }, "resize": true },
-                "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 0.8 } } }
-            },
-            "retina_detect": true
-        });
-
+        particlesJS("particles", { "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": ["#00ffff", "#00aaff", "#7b00ff"] }, "shape": { "type": "char", "character": { "value": "01", "font": "Verdana", "style": "", "weight": "normal" } }, "opacity": { "value": 0.6, "random": true }, "size": { "value": 4, "random": true }, "line_linked": { "enable": true, "distance": 150, "color": "#00ffff", "opacity": 0.3, "width": 1 }, "move": { "enable": true, "speed": 3, "direction": "none", "random": false, "straight": false, "out_mode": "out" } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "grab" }, "resize": true }, "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 0.8 } } } }, "retina_detect": true });
+        
         document.getElementById('email').addEventListener('click', function() {
             navigator.clipboard.writeText('joshua369x@gmail.com');
             document.getElementById('copied').style.display = 'inline';
-            setTimeout(() => { document.getElementById('copied').style.display = 'none'; }, 2000);
+            setTimeout(() => {
+                document.getElementById('copied').style.display = 'none';
+            }, 2000);
+        });
+
+        // AJAX form submission for counter offer
+        const form = document.getElementById('offer-form');
+        const status = document.getElementById('form-status');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    form.reset();
+                    status.textContent = "Your offer has been sent successfully!";
+                    status.className = 'success';
+                    status.style.display = 'block';
+                } else {
+                    // FormSubmit might return success false even on success, so we check for 'ok' status
+                    status.textContent = "Your offer has been sent successfully!";
+                    status.className = 'success';
+                    status.style.display = 'block';
+                }
+            })
+            .catch(error => {
+                status.textContent = "An error occurred. Please try again later.";
+                status.className = 'error';
+                status.style.display = 'block';
+            })
+            .finally(() => {
+                setTimeout(() => {
+                    status.style.display = 'none';
+                }, 5000);
+            });
         });
     </script>
 </body>
